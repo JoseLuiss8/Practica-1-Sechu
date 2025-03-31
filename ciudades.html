@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario simple</title>
+</head>
+<body>
+    <style type="text/css">
+        form {
+            margin: 20px;
+            background: #ccc;
+            color: #6a68e2
+        }
+    </style>
+    <h1>Formulario básico</h1>
+
+    <form action="/procesar/formulario" method="post">
+        Nombre y Apellido: <input type="text" name="nombre"><br><br>
+        Edad: <input type="number" name="edad"><br><br>
+        Ciudad: <input type="text" name="ciudad"><br><br>
+        <!--- Añadir un SELECT para ciudades-->
+        <select name="ciudad">
+            <option value="madrid">Madrid</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="valencia">Valencia</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="zaragoza">Zaragoza</option>
+        </select>
+        <!-- Añadir radio para sexo-->
+        <!-- Añadir checkbox para aceptar condiciones de registro -->
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
