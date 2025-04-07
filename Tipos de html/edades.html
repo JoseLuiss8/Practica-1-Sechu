@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado del formulario</title>
+</head>
+<body>
+    <style type="text/css">
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(93, 63, 147);
+            color: white;
+        }
+    </style>
+    <h2>Datos recibidos</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre y Apellido</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>{{ nombre }}</td>
+            <td>{{ edad }}</td>
+            <td>{{ ciudad }}</td>
+        </tr>
+    </table>
+
+    <br><a href="/">Volver al formulario</a>
+</body>
+</html>
